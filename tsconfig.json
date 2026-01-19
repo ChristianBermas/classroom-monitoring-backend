@@ -17,6 +17,10 @@
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
 
+    // Additional settings to enhance type safety
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+
     /* Interop & correctness */
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
