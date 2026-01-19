@@ -6,6 +6,10 @@ import subjectsRouter from './routes/subjects.js';
 const app = express();
 const PORT = 8000;
 
+if (!process.env.FRONTEND_URL) {
+  throw new Error('FRONTEND_URL is not defined in .env file');
+}
+
 app.use(
   cors({
     origin: process.env.FRONTEND_URL,
